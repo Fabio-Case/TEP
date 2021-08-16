@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../../../../../../Applications/XAMPP/xamppfiles/htdocs"
+		},
+		{
+			"path": "../../../../../.."
+		}
+	],
+	"settings": {
+		"maven.view": "flat",
+		"java.project.sourcePaths": [
+			""
+		]
+	}
+}
