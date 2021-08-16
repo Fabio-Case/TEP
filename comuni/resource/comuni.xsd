@@ -1,0 +1,31 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="comuni">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="comune" maxOccurs="unbounded" minOccurs="0">
+				  <xs:complexType>
+					<xs:sequence>
+						<xs:element name="campo" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute name="nome" type="xs:string"/>
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				  </xs:complexType>
+				</xs:element>
+			 </xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:attribute name="nome">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:pattern value="id|id_regione|id_provincia|nome|capoluogo_provincia|codice_catastale|latitudine|longitudine"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:attribute>
+</xs:schema>
